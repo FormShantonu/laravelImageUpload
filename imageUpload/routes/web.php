@@ -16,3 +16,5 @@
 // });
 
 Route::get('/','familyImages@index');
+Route::post('image-gallery', 'familyImages@upload');
+Route::delete('image-gallery/{id}', 'familyImages@destroy');
